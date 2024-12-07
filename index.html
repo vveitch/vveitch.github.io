@@ -1,18 +1,89 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Veitch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ADD8E6; /* Light blue background */
+            color: #333; /* Default text color */
+        }
+        header {
+            background-color: #ADD8E6; /* Light blue header background */
+            color: #333; /* Consistent text color */
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        p {
+            margin: 1rem 0;
+            color: #333; /* Consistent text color */
+        }
+        a {
+            color: #0066CC; /* Blue links for contrast */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #333; /* Consistent text color */
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            main {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Replace with your actual picture URL -->
+        <img src="vveitch.png" alt="Victor Veitch">
+        <h1>Victor Veitch</h1>
+    </header>
+    <main>
+        <p>
+            I am a machine learning researcher. My current research interests lie in the development of 
+            safe artificial intelligence and (causal) representation learning. I am currently an 
+            Assistant Professor of Data Science and Statistics at the University of Chicago and a 
+            (part time) research scientist at Google DeepMind.
+        </p>
+        <p>
+            <a href="mailto:victorveitch@gmail.com">victorveitch@gmail.com</a>
+        </p>
+        <p>
+            <a href="https://scholar.google.com/citations?user=xkn_XZgAAAAJ" target="_blank">Google Scholar</a>
+        </p>
+    </main>
+</body>
+</html>
